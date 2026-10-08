@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Данные программы РРФП 2026</title>
+<style>body{max-width:700px;margin:60px auto;padding:24px;font:18px/1.6 system-ui;color:#14172c}a{color:#007c96}</style>
+<h1>Данные программы РРФП 2026</h1>
+<p id="status">Проверяю выгрузку…</p>
+<p><a href="program.json">Текущая выгрузка</a> · <a href="program.last-good.json">Предыдущая успешная выгрузка</a></p>
+<p><a href="https://rrfp.ru/program/">Открыть программу конференции</a></p>
+<script>
+fetch('program.json',{cache:'no-cache',credentials:'omit'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{
+  document.getElementById('status').textContent=`Опубликовано мероприятий: ${data.recordCount}. Данные обновлены: ${new Date(data.generatedAt).toLocaleString('ru-RU',{timeZone:'Asia/Yekaterinburg'})} (Екатеринбург).`;
+}).catch(()=>{document.getElementById('status').textContent='Не удалось проверить выгрузку. Попробуйте открыть файл по ссылке ниже.'});
+</script>
+</html>
