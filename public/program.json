@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T14:00:28.490263+00:00",
+  "generatedAt": "2026-10-09T02:10:22.600815+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 57,
@@ -708,7 +708,7 @@
     {
       "id": "education-plenary",
       "title": "Пленарная сессия «Цифровое и устойчивое развитие в программах бизнес-школ как фактор развития регионов»",
-      "translation": "",
+      "translation": "Empowering Markets by Twin Transition Implementation into Business School Curriculum",
       "date": "2026-11-13",
       "day": 13,
       "start": "11:00",
@@ -743,7 +743,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": true,
-      "updatedAt": "2026-10-08T08:24:10.000Z"
+      "updatedAt": "2026-10-08T18:14:03.000Z"
     },
     {
       "id": "creative-hr",
