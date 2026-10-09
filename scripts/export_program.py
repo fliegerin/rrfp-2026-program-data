@@ -39,6 +39,78 @@ TOPICS = {'Устойчивое развитие': 'esg', 'Экономика и
           'Технологии и данные': 'tech', 'Образование и люди': 'people',
           'Территории и города': 'city', 'Общая программа': 'general'}
 CONTENT_KEYS = ('intro', 'agenda', 'formatResult', 'audience', 'other')
+TIME_PATTERN = r'(?:[01]?\d|2[0-3]):[0-5]\d'
+INTERVAL_PATTERN = re.compile(rf'({TIME_PATTERN})\s*[-–—−‑]\s*({TIME_PATTERN})')
+
+
+def heading_text(line):
+    return re.sub(r'\s+', ' ', re.sub(r'[#*_]', '', line)).strip().rstrip(':').casefold()
+
+
+def parse_section_intervals(other, date, start, end, ident):
+    """Read only the named schedule block; preserve all description text unchanged."""
+    lines = other.replace('\r\n', '\n').replace('\r', '\n').split('\n')
+    headings = [i for i, line in enumerate(lines) if heading_text(line) in (
+        'время работы секции', 'время работы секции (с перерывами)')]
+    if not headings:
+        return []
+    if len(headings) != 1:
+        raise ValueError(f'{ident}: duplicate section schedule headings')
+    intervals, separated = [], False
+    for raw in lines[headings[0] + 1:]:
+        line = raw.strip()
+        if not line:
+            separated = True
+            continue
+        # The next Markdown heading ends the block; bold time rows remain valid.
+        if re.match(r'^#{1,6}\s+', line) or (re.fullmatch(r'\*\*[^*]+\*\*', line) and not re.match(r'^\*\*\s*\d', line)):
+            break
+        line = re.sub(r'^(?:[-*+•]\s+|\d+[.)]\s+)', '', line).strip().strip('*_')
+        match = INTERVAL_PATTERN.fullmatch(line)
+        if not match:
+            # A separate prose paragraph can follow; a mistyped time must not be skipped.
+            if intervals and separated and not re.match(r'\d', line):
+                break
+            raise ValueError(f'{ident}: invalid schedule row; use HH:MM–HH:MM')
+        separated = False
+        first, last = [t.zfill(5) for t in match.groups()]
+        if last <= first or (intervals and first < intervals[-1]['end']):
+            raise ValueError(f'{ident}: schedule intervals overlap, are out of order or end before they start')
+        begin = datetime.fromisoformat(f'{date}T{first}:00').replace(tzinfo=TZ)
+        finish = datetime.fromisoformat(f'{date}T{last}:00').replace(tzinfo=TZ)
+        intervals.append({'start': first, 'end': last,
+                          'startsAt': begin.isoformat(), 'endsAt': finish.isoformat()})
+    if not intervals:
+        raise ValueError(f'{ident}: section schedule heading has no intervals')
+    if start and start != timestamp(intervals[0]['startsAt']):
+        raise ValueError(f'{ident}: Начало must match the first section interval')
+    if end and end != timestamp(intervals[-1]['endsAt']):
+        raise ValueError(f'{ident}: Окончание must match the last section interval')
+    return intervals
+
+
+def validate_intervals(event):
+    """The optional field keeps older last-good snapshots compatible."""
+    intervals = event.get('intervals', [])
+    if not isinstance(intervals, list):
+        raise ValueError('Invalid section intervals')
+    previous_end = None
+    for item in intervals:
+        if not isinstance(item, dict) or any(
+            not isinstance(item.get(k), str) or not re.fullmatch(r'([01]\d|2[0-3]):[0-5]\d', item[k])
+            for k in ('start', 'end')
+        ):
+            raise ValueError('Invalid section interval time')
+        if item['end'] <= item['start'] or (previous_end and item['start'] < previous_end):
+            raise ValueError('Invalid section interval order')
+        for key, clock in (('startsAt', 'start'), ('endsAt', 'end')):
+            dt = timestamp(item.get(key))
+            if not dt or dt.date().isoformat() != event['date'] or dt.strftime('%H:%M') != item[clock] or dt.second or dt.microsecond:
+                raise ValueError('Section interval date/time does not match')
+        previous_end = item['end']
+    if intervals and any(event.get(key) != intervals[index][key]
+                         for key, index in (('start', 0), ('end', -1), ('startsAt', 0), ('endsAt', -1))):
+        raise ValueError('Section intervals do not match the overall event range')
 
 
 def scalar(value):
@@ -121,6 +193,9 @@ def build_snapshot(event_records, speaker_records, mode='published'):
         place = ' · '.join(x for x in (venue, 'ауд. ' + room if room else '') if x)
         place = place or ('Онлайн' if attendance == 'Онлайн' else 'Место уточняется')
         content = {k: scalar(f[k]) for k in CONTENT_KEYS}
+        intervals = parse_section_intervals(content['other'], date, start, end, ident)
+        if intervals:
+            start, end = timestamp(intervals[0]['startsAt']), timestamp(intervals[-1]['endsAt'])
         # Summary uses the first prose paragraph; no Airtable field names become headings.
         prose = [p for p in re.split(r'\n\s*\n', content['intro']) if p and not re.fullmatch(r'\*\*[^\n]+\*\*', p)]
         summary = re.sub(r'[*_#`]', '', prose[0]).replace('\n', ' ') if prose else ''
@@ -132,6 +207,7 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             'date': date, 'day': int(date[-2:]), 'start': start.strftime('%H:%M') if start else None,
             'end': end.strftime('%H:%M') if end else None,
             'startsAt': start.isoformat() if start else None, 'endsAt': end.isoformat() if end else None,
+            'intervals': intervals,
             'datePending': False, 'topic': topic, 'format': kind, 'attendance': attendance,
             'venue': venue, 'room': room, 'place': place, 'code': scalar(f['code']),
             'partners': [scalar(f['partner'])] if scalar(f['partner']) else [],
@@ -172,6 +248,7 @@ def validate_snapshot(snapshot, allow_empty=False):
             raise ValueError('Invalid event date')
         for key in ('registrationUrl', 'onlineUrl'):
             safe_url(e[key])
+        validate_intervals(e)
 
 
 def bridge_html(snapshot):
