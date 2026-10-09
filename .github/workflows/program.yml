@@ -3,7 +3,7 @@ name: Update RRFP programme
 on:
   push:
     branches: [master]
-    paths: ['public/**', 'scripts/**', '.github/workflows/program.yml']
+    paths: ['public/**', 'scripts/**', 'tests/**', '.github/workflows/program.yml']
   workflow_dispatch:
     inputs:
       refresh:
@@ -35,6 +35,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Check split section schedules
+        run: python -m unittest discover -s tests
       - name: Refresh from Airtable
         if: github.event_name != 'push' && (github.event_name != 'workflow_dispatch' || inputs.refresh)
         env:
