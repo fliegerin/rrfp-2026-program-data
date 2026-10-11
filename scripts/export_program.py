@@ -35,6 +35,7 @@ FIELDS = {
 }
 SPEAKER_FIELDS = {'name': 'fldhcc2gNElwvOOOb', 'position': 'fldEBD7hccsQzYRGx',
                   'organization': 'fldEWdOmzLYElZ7oc', 'role': 'fldjIOyhIgduHk8n2'}
+SPEAKER_SORT_FIELD = 'fldcehg1WbO2RyEMA'  # Airtable: Фамилия для сортировки
 TOPICS = {'Устойчивое развитие': 'esg', 'Экономика и бизнес': 'econ',
           'Технологии и данные': 'tech', 'Образование и люди': 'people',
           'Территории и города': 'city', 'Общая программа': 'general'}
@@ -148,11 +149,15 @@ def timestamp(value):
 
 
 def build_snapshot(event_records, speaker_records, mode='published'):
-    people = {}
+    people, speaker_order = {}, {}
     for record in speaker_records:
         values = cells(record)
         person = {'id': record['id'], **{k: scalar(values.get(v)) for k, v in SPEAKER_FIELDS.items()}}
         people[record['id']] = person
+        # Saved exports without the helper field use the same given-name-first convention.
+        surname = scalar(values.get(SPEAKER_SORT_FIELD)) or person['name'].split(' ')[-1]
+        speaker_order[record['id']] = tuple(
+            text.casefold().replace('ё', 'е') for text in (surname, person['name']))
     events, ids = [], set()
     for record in event_records:
         values = cells(record)
@@ -189,6 +194,7 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             if pid not in people or not people[pid]['name']:
                 raise ValueError(f'{ident}: unresolved speaker link')
             linked.append(people[pid])
+        linked.sort(key=lambda person: speaker_order[person['id']])
         venue, room = scalar(f['venue']), scalar(f['room'])
         place = ' · '.join(x for x in (venue, 'ауд. ' + room if room else '') if x)
         place = place or ('Онлайн' if attendance == 'Онлайн' else 'Место уточняется')
@@ -356,7 +362,7 @@ def main():
                 raise ValueError('Set AIRTABLE_TOKEN in the private runner environment')
             events = fetch_records(TABLES['events'], FIELDS.values(), token)
             time.sleep(.25)
-            speakers = fetch_records(TABLES['speakers'], SPEAKER_FIELDS.values(), token)
+            speakers = fetch_records(TABLES['speakers'], (*SPEAKER_FIELDS.values(), SPEAKER_SORT_FIELD), token)
         snapshot = build_snapshot(events, speakers, args.mode)
         write_snapshot(snapshot, args.output_dir, args.allow_empty)
         print(f"Generated {snapshot['recordCount']} events ({args.mode}); snapshot validated.")
