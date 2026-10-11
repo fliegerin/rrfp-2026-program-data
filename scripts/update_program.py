@@ -20,7 +20,8 @@ def refresh():
     # Fetch and validate everything before touching the existing public files.
     events = exporter.fetch_records(exporter.TABLES['events'], exporter.FIELDS.values(), token)
     time.sleep(.25)
-    speakers = exporter.fetch_records(exporter.TABLES['speakers'], exporter.SPEAKER_FIELDS.values(), token)
+    speakers = exporter.fetch_records(exporter.TABLES['speakers'],
+                                     (*exporter.SPEAKER_FIELDS.values(), exporter.SPEAKER_SORT_FIELD), token)
     snapshot = exporter.build_snapshot(events, speakers, 'published')
     exporter.validate_snapshot(snapshot)
     with tempfile.TemporaryDirectory() as folder:
