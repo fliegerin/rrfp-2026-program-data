@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T07:11:54.639517+00:00",
+  "generatedAt": "2026-10-13T07:44:09.669436+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 57,
@@ -27,7 +27,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Виола Анатольевна Ларионова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -68,7 +70,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Ирина Дмитриевна Тургель"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -725,7 +729,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Лариса Владимировна Юрьева"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -766,7 +772,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Александр Александрович Тарасьев",
+        "Виктория Федоровна Турыгина"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -807,7 +816,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Ирина Владимировна Баскакова",
+        "Юлия Анатольевна Харитонова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -850,7 +862,10 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Лилия Сабиховна Валинурова",
+        "Наталья Александровна Кузьминых"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -891,7 +906,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Анастасия Евгеньевна Судакова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1033,7 +1050,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Мария Витальевна Передерий"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1074,7 +1093,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Вячеслав Михайлович Лаптев",
+        "Светлана Николаевна Лапшина"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1115,7 +1137,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Наталья Рэмовна Кельчевская"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1156,7 +1180,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Анастасия Евгеньевна Судакова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1216,7 +1242,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Ольга Евгеньевна Матушкина"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1259,7 +1287,10 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Наталья Сергеевна Алексеева",
+        "Анна Викторовна Дьячкова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1423,7 +1454,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Лариса Анатольевна Малышева"
+      ],
       "summary": "При поддержке РАБО, НАСДОБР, Экспертного Совета подготовки управленческих кадров РФ, АСИ",
       "content": {
         "intro": "При поддержке РАБО, НАСДОБР, Экспертного Совета подготовки управленческих кадров РФ, АСИ",
@@ -1464,7 +1497,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Анна Викторовна Дьячкова",
+        "Ирина Сергеевна Шорохова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1505,7 +1541,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Наталья Рэмовна Кельчевская"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1548,7 +1586,9 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Ольга Анатольевна Чернова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1589,7 +1629,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Никита Сергеевич Малафеев",
+        "Егор Викторович Пащина"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1630,7 +1673,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Игорь Анатольевич Майбуров"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1671,7 +1716,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Гавриил Александрович Агарков",
+        "Елена Алексеевна Разумовская"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1714,7 +1762,9 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Марина Андреевна Гильтман"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1796,7 +1846,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Юлия Анатольевна Мальцева",
+        "Даниил Геннадьевич Сандлер"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1837,7 +1890,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Михаил Павлович Логинов",
+        "Даниил Геннадьевич Сандлер"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1880,7 +1936,9 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Александр Александрович Победин"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1921,7 +1979,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Карина Александровна Голованова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -1962,7 +2022,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Юлия Александровна Долгих"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2016,7 +2078,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Людмила Станиславовна Ружанская"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2057,7 +2121,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Жанна Сергеевна Беляева",
+        "Александр Александрович Ишуков"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2111,7 +2178,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Елена Геннадьевна Шаблова"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2152,7 +2221,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Наталья Николаевна Мокеева"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2193,7 +2264,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Дмитрий Анатольевич Гладырев"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2234,7 +2307,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Анатолий Михайлович Платонов"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2275,7 +2350,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Наталья Михайловна Караваева"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2316,7 +2393,9 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Вероника Эдуардовна Заречнюк"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2357,7 +2436,11 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Юрий Викторович Аникин",
+        "Александра Сергеевна Ушакова",
+        "Владимир Ильич Шилков"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2400,7 +2483,10 @@
       ],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Михаил Эдуардович Аким",
+        "Жанна Сергеевна Беляева"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2454,7 +2540,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Елена Борисовна Бедрина",
+        "Тамара Владимировна Куприна"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2508,7 +2597,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Ирина Игоревна Семенова",
+        "Илья Михайлович Черненко"
+      ],
       "summary": "",
       "content": {
         "intro": "",
@@ -2549,7 +2641,10 @@
       "partners": [],
       "speakers": [],
       "speakerDetails": [],
-      "leaders": [],
+      "leaders": [
+        "Азамат Маратович Валей",
+        "Олег Святославович Мариев"
+      ],
       "summary": "",
       "content": {
         "intro": "",
