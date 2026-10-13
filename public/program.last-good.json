@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T03:03:16.397433+00:00",
+  "generatedAt": "2026-10-13T05:11:19.595213+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 57,
@@ -406,15 +406,15 @@
         "audience": "",
         "other": ""
       },
-      "language": "",
-      "interpretation": "",
+      "language": "Русский",
+      "interpretation": "Синхронный перевод на английский",
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
       "onlineUrl": "",
       "canJoin": false,
       "feature": true,
-      "updatedAt": "2026-10-09T14:10:37.000Z"
+      "updatedAt": "2026-10-13T05:04:19.000Z"
     },
     {
       "id": "coffee-12-1300",
