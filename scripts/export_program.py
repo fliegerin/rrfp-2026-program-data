@@ -25,6 +25,7 @@ FIELDS = {
     'attendance': 'fld9qVu7RISV0xXF7', 'venue': 'fldNL7SWWuDxrDJUw',
     'room': 'fldAfDCZFe1E4WVJf', 'code': 'fldeotq9IRLAdtk2w',
     'partner': 'fldQ82nPmNspA0CEX', 'speakers': 'fldfbwHvFd89LwpLx',
+    'leaders': 'fld1budX48uxR82Py',  # Events: Руководители (event-specific links)
     'language': 'fldU6K1X0AeipkGZi', 'interpretation': 'fldjv0A5rHRagqfoQ',
     'invitationOnly': 'flduBzY5dL9OQA9OW', 'separateRegistration': 'fldevGxf4eiKdsdYM',
     'registrationUrl': 'fldHeHiHGrhwaEhvu', 'onlineUrl': 'fldybAOJ3l4JwmREy',
@@ -195,6 +196,15 @@ def build_snapshot(event_records, speaker_records, mode='published'):
                 raise ValueError(f'{ident}: unresolved speaker link')
             linked.append(people[pid])
         linked.sort(key=lambda person: speaker_order[person['id']])
+        # Leaders belong to this event, independently of the person's global role.
+        # Keep legacy moderators from Спикеры for older saved exports.
+        leaders_by_id = {p['id']: p for p in linked if p['role'] == 'Модератор'}
+        for link in f['leaders'] or []:
+            pid = link if isinstance(link, str) else link['id']
+            if pid not in people or not people[pid]['name']:
+                raise ValueError(f'{ident}: unresolved leader link')
+            leaders_by_id[pid] = people[pid]
+        leaders = sorted(leaders_by_id.values(), key=lambda person: speaker_order[person['id']])
         venue, room = scalar(f['venue']), scalar(f['room'])
         place = ' · '.join(x for x in (venue, 'ауд. ' + room if room else '') if x)
         place = place or ('Онлайн' if attendance == 'Онлайн' else 'Место уточняется')
@@ -218,7 +228,7 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             'venue': venue, 'room': room, 'place': place, 'code': scalar(f['code']),
             'partners': [scalar(f['partner'])] if scalar(f['partner']) else [],
             'speakers': [p['name'] for p in linked if p['role'] != 'Модератор'],
-            'speakerDetails': linked, 'leaders': [p['name'] for p in linked if p['role'] == 'Модератор'],
+            'speakerDetails': linked, 'leaders': list(dict.fromkeys(p['name'] for p in leaders)),
             'summary': summary, 'content': content, 'language': scalar(f['language']),
             'interpretation': scalar(f['interpretation']), 'invitationOnly': f['invitationOnly'] is True,
             'separateRegistration': f['separateRegistration'] is True,
