@@ -168,7 +168,9 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             raise ValueError('Unknown/missing publication status')
         if status == 'Скрыто' or (mode == 'published' and status != 'Опубликовано'):
             continue
-        ident, title = scalar(f['id']), scalar(f['title'])
+        # New records in the colleagues' interface have no editable Event ID.
+        # Airtable record IDs are stable; use the same fallback as the PDF builder.
+        ident, title = scalar(f['id']) or record['id'], scalar(f['title'])
         if not re.fullmatch(r'[A-Za-z0-9_-]+', ident) or ident in ids or not title:
             raise ValueError('Missing/duplicate/unsafe Event ID or empty title')
         ids.add(ident)
