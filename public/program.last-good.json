@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T00:24:45.821807+00:00",
+  "generatedAt": "2026-10-16T08:58:51.791462+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 60,
@@ -250,12 +250,12 @@
       "language": "",
       "interpretation": "",
       "invitationOnly": false,
-      "separateRegistration": false,
-      "registrationUrl": "",
+      "separateRegistration": true,
+      "registrationUrl": "https://forms.yandex.ru/u/6ad1ca4e4a052de189ebc385",
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-10-13T08:53:06.000Z"
+      "updatedAt": "2026-10-16T08:57:56.000Z"
     },
     {
       "id": "registration-12",
