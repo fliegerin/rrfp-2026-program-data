@@ -56,6 +56,25 @@ class EventLeaders(unittest.TestCase):
     def test_empty_leader_field_keeps_old_snapshot_contract(self):
         self.assertEqual(self.build(record(), [])['leaders'], [])
 
+    def test_explicit_event_leader_does_not_promote_moderators_of_other_events(self):
+        people = [person('rec1', 'Людмила Станиславовна Ружанская', 'Ружанская', 'Модератор'),
+                  person('rec2', 'Дмитрий Евгеньевич Толмачев', 'Толмачев', 'Модератор')]
+        event = record()
+        event['fields'][exporter.FIELDS['speakers']] = ['rec1', 'rec2']
+        event['fields'][exporter.FIELDS['leaders']] = ['rec2']
+        before = deepcopy((event, people))
+        result = self.build(event, people)
+        self.assertEqual(result['leaders'], ['Дмитрий Евгеньевич Толмачев'])
+        self.assertEqual(result['speakers'], ['Людмила Станиславовна Ружанская'])
+        self.assertEqual([p['role'] for p in result['speakerDetails']], ['Спикер', 'Модератор'])
+        self.assertEqual((event, people), before)
+
+    def test_legacy_moderator_without_explicit_event_leaders_still_exports(self):
+        moderator = person('rec1', 'Олег Буклемишев', 'Буклемишев', 'Модератор')
+        event = record()
+        event['fields'][exporter.FIELDS['speakers']] = ['rec1']
+        self.assertEqual(self.build(event, [moderator])['leaders'], ['Олег Буклемишев'])
+
 
 if __name__ == '__main__':
     unittest.main()
