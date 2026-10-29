@@ -199,14 +199,18 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             linked.append(people[pid])
         linked.sort(key=lambda person: speaker_order[person['id']])
         # Leaders belong to this event, independently of the person's global role.
-        # Keep legacy moderators from Спикеры for older saved exports.
-        leaders_by_id = {p['id']: p for p in linked if p['role'] == 'Модератор'}
+        # Explicit event leaders take precedence over a person's role elsewhere.
+        # Keep legacy moderator inference only when this event has no leader links.
+        explicit_leaders = f['leaders'] or []
+        leaders_by_id = {} if explicit_leaders else {p['id']: p for p in linked if p['role'] == 'Модератор'}
         for link in f['leaders'] or []:
             pid = link if isinstance(link, str) else link['id']
             if pid not in people or not people[pid]['name']:
                 raise ValueError(f'{ident}: unresolved leader link')
             leaders_by_id[pid] = people[pid]
         leaders = sorted(leaders_by_id.values(), key=lambda person: speaker_order[person['id']])
+        if explicit_leaders:
+            linked = [dict(p, role='Модератор' if p['id'] in leaders_by_id else 'Спикер') for p in linked]
         venue, room = scalar(f['venue']), scalar(f['room'])
         place = ' · '.join(x for x in (venue, 'ауд. ' + room if room else '') if x)
         place = place or ('Онлайн' if attendance == 'Онлайн' else 'Место уточняется')
