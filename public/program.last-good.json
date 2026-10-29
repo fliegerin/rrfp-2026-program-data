@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T12:02:37.701517+00:00",
+  "generatedAt": "2026-10-29T12:04:58.718079+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 62,
@@ -3032,7 +3032,7 @@
       "place": "Онлайн",
       "code": "EFC",
       "partners": [
-        "Институт геологии и нефтегазовых технологий Казанского федерального университета"
+        "Институтом геологии и нефтегазовых технологий Казанского федерального университета"
       ],
       "speakers": [],
       "speakerDetails": [],
@@ -3055,7 +3055,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-10-29T11:49:55.000Z"
+      "updatedAt": "2026-10-29T12:03:53.000Z"
     },
     {
       "id": "section-mep",
