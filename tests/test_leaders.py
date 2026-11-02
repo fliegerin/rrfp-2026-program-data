@@ -20,7 +20,7 @@ class EventLeaders(unittest.TestCase):
             {'id': p['id'], 'name': p['fields'][exporter.SPEAKER_FIELDS['name']]} for p in people]
         before = deepcopy((event, people))
         result = self.build(event, people)
-        self.assertEqual(result['leaders'], ['Елена Борисовна Бедрина', 'Тамара Владимировна Куприна'])
+        self.assertEqual(result['leaders'], ['Елена Борисовна Бедрина, Организация rec2', 'Тамара Владимировна Куприна, Организация rec1'])
         self.assertEqual(result['speakers'], [])
         self.assertEqual(result['speakerDetails'], [])
         self.assertEqual((event, people), before)
@@ -32,7 +32,7 @@ class EventLeaders(unittest.TestCase):
         event['fields'][exporter.FIELDS['leaders']] = ['rec2', 'rec1', 'rec2']
         event['fields'][exporter.FIELDS['speakers']] = ['rec1']
         self.assertEqual(self.build(event, people)['leaders'],
-                         ['Жанна Сергеевна Беляева', 'Александр Александрович Ишуков'])
+                         ['Жанна Сергеевна Беляева, Организация rec1', 'Александр Александрович Ишуков, Организация rec2'])
 
     def test_leadership_does_not_spread_to_other_events(self):
         leader = person('rec1', 'Наталья Рэмовна Кельчевская', 'Кельчевская')
@@ -41,7 +41,7 @@ class EventLeaders(unittest.TestCase):
         first['fields'][exporter.FIELDS['leaders']] = ['rec1']
         second['fields'][exporter.FIELDS['speakers']] = ['rec1']
         events = {e['id']: e for e in exporter.build_snapshot([first, second], [leader])['events']}
-        self.assertEqual(events['section-test']['leaders'], [leader['fields'][exporter.SPEAKER_FIELDS['name']]])
+        self.assertEqual(events['section-test']['leaders'], ['Наталья Рэмовна Кельчевская, Организация rec1'])
         self.assertEqual(events['another-section']['leaders'], [])
         self.assertEqual(events['another-section']['speakers'], [leader['fields'][exporter.SPEAKER_FIELDS['name']]])
 
@@ -64,7 +64,7 @@ class EventLeaders(unittest.TestCase):
         event['fields'][exporter.FIELDS['leaders']] = ['rec2']
         before = deepcopy((event, people))
         result = self.build(event, people)
-        self.assertEqual(result['leaders'], ['Дмитрий Евгеньевич Толмачев'])
+        self.assertEqual(result['leaders'], ['Дмитрий Евгеньевич Толмачев, Организация rec2'])
         self.assertEqual(result['speakers'], ['Людмила Станиславовна Ружанская'])
         self.assertEqual([p['role'] for p in result['speakerDetails']], ['Спикер', 'Модератор'])
         self.assertEqual((event, people), before)
@@ -73,7 +73,34 @@ class EventLeaders(unittest.TestCase):
         moderator = person('rec1', 'Олег Буклемишев', 'Буклемишев', 'Модератор')
         event = record()
         event['fields'][exporter.FIELDS['speakers']] = ['rec1']
-        self.assertEqual(self.build(event, [moderator])['leaders'], ['Олег Буклемишев'])
+        self.assertEqual(self.build(event, [moderator])['leaders'], ['Олег Буклемишев, Организация rec1'])
+
+
+    def test_affiliation_is_trimmed_and_position_is_not_in_leader_label(self):
+        leader = person('rec1', 'Михаил Аким', 'Аким')
+        leader['fields'][exporter.SPEAKER_FIELDS['organization']] = '  Высшая школа экономики  '
+        leader['fields'][exporter.SPEAKER_FIELDS['position']] = 'Профессор'
+        event = record()
+        event['fields'][exporter.FIELDS['leaders']] = ['rec1', 'rec1']
+        event['fields'][exporter.FIELDS['speakers']] = ['rec1']
+        before = deepcopy((event, leader))
+        result = self.build(event, [leader])
+        self.assertEqual(result['leaders'], ['Михаил Аким, Высшая школа экономики'])
+        self.assertEqual(result['speakerDetails'][0]['position'], 'Профессор')
+        self.assertEqual((event, leader), before)
+
+    def test_missing_or_blank_affiliation_keeps_name_without_comma(self):
+        field = exporter.SPEAKER_FIELDS['organization']
+        for organization in (None, '', '   '):
+            with self.subTest(organization=organization):
+                leader = person('rec1', 'Михаил Аким', 'Аким')
+                if organization is None:
+                    del leader['fields'][field]
+                else:
+                    leader['fields'][field] = organization
+                event = record()
+                event['fields'][exporter.FIELDS['leaders']] = ['rec1']
+                self.assertEqual(self.build(event, [leader])['leaders'], ['Михаил Аким'])
 
 
 if __name__ == '__main__':
