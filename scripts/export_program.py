@@ -234,7 +234,12 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             'venue': venue, 'room': room, 'place': place, 'code': scalar(f['code']),
             'partners': [scalar(f['partner'])] if scalar(f['partner']) else [],
             'speakers': [p['name'] for p in linked if p['role'] != 'Модератор'],
-            'speakerDetails': linked, 'leaders': list(dict.fromkeys(p['name'] for p in leaders)),
+            'speakerDetails': linked,
+            # Display affiliation for event leaders; never include their position.
+            'leaders': list(dict.fromkeys(
+                ', '.join(value for value in (p['name'], p['organization']) if value)
+                for p in leaders
+            )),
             'summary': summary, 'content': content, 'language': scalar(f['language']),
             'interpretation': scalar(f['interpretation']), 'invitationOnly': f['invitationOnly'] is True,
             'separateRegistration': f['separateRegistration'] is True,
