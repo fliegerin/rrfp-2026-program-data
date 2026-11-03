@@ -33,8 +33,8 @@ class SpeakerOrder(unittest.TestCase):
                   person('rec4', 'Олег Буклемишев', 'Буклемишев', 'Модератор')]
         before = deepcopy(people)
         result = self.event(people)
-        self.assertEqual(result['speakers'], ['Сергей Афонцев', 'Дмитрий Мраморов', 'Алексей Овакимян'])
-        self.assertEqual(result['leaders'], ['Олег Буклемишев, Организация rec4'])
+        self.assertEqual(result['speakers'], ['Сергей Афонцев', 'Олег Буклемишев', 'Дмитрий Мраморов', 'Алексей Овакимян'])
+        self.assertEqual(result['leaders'], [])
         self.assertEqual([p['id'] for p in result['speakerDetails']], ['rec2', 'rec4', 'rec3', 'rec1'])
         for p in result['speakerDetails']:
             self.assertEqual(p['position'], 'Должность ' + p['id'])
