@@ -65,15 +65,18 @@ class EventLeaders(unittest.TestCase):
         before = deepcopy((event, people))
         result = self.build(event, people)
         self.assertEqual(result['leaders'], ['Дмитрий Евгеньевич Толмачев, Организация rec2'])
-        self.assertEqual(result['speakers'], ['Людмила Станиславовна Ружанская'])
-        self.assertEqual([p['role'] for p in result['speakerDetails']], ['Спикер', 'Модератор'])
+        self.assertEqual(result['speakers'], ['Людмила Станиславовна Ружанская', 'Дмитрий Евгеньевич Толмачев'])
+        self.assertEqual([p['role'] for p in result['speakerDetails']], ['Спикер', 'Спикер'])
         self.assertEqual((event, people), before)
 
-    def test_legacy_moderator_without_explicit_event_leaders_still_exports(self):
+    def test_global_moderator_without_event_assignment_is_a_speaker(self):
         moderator = person('rec1', 'Олег Буклемишев', 'Буклемишев', 'Модератор')
         event = record()
         event['fields'][exporter.FIELDS['speakers']] = ['rec1']
-        self.assertEqual(self.build(event, [moderator])['leaders'], ['Олег Буклемишев, Организация rec1'])
+        result=self.build(event, [moderator])
+        self.assertEqual(result['leaders'], [])
+        self.assertEqual(result['moderators'], [])
+        self.assertEqual(result['speakers'], ['Олег Буклемишев'])
 
 
     def test_affiliation_is_trimmed_and_position_is_not_in_leader_label(self):
