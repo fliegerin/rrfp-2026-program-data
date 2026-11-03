@@ -25,7 +25,8 @@ FIELDS = {
     'attendance': 'fld9qVu7RISV0xXF7', 'venue': 'fldNL7SWWuDxrDJUw',
     'room': 'fldAfDCZFe1E4WVJf', 'code': 'fldeotq9IRLAdtk2w',
     'partner': 'fldQ82nPmNspA0CEX', 'speakers': 'fldfbwHvFd89LwpLx',
-    'leaders': 'fld1budX48uxR82Py',  # Events: Руководители (event-specific links)
+    'leaders': 'fld1budX48uxR82Py',
+    'moderators': 'fldERRygZCegtxTTC',
     'language': 'fldU6K1X0AeipkGZi', 'interpretation': 'fldjv0A5rHRagqfoQ',
     'invitationOnly': 'flduBzY5dL9OQA9OW', 'separateRegistration': 'fldevGxf4eiKdsdYM',
     'registrationUrl': 'fldHeHiHGrhwaEhvu', 'onlineUrl': 'fldybAOJ3l4JwmREy',
@@ -191,26 +192,18 @@ def build_snapshot(event_records, speaker_records, mode='published'):
         kind, attendance = scalar(f['format']), scalar(f['attendance'])
         if not topic or not kind or attendance not in ('Очно', 'Онлайн', 'Очно и онлайн'):
             raise ValueError(f'{ident}: missing/unknown topic, event type or attendance')
-        linked = []
-        for link in f['speakers'] or []:
-            pid = link if isinstance(link, str) else link['id']
-            if pid not in people or not people[pid]['name']:
-                raise ValueError(f'{ident}: unresolved speaker link')
-            linked.append(people[pid])
-        linked.sort(key=lambda person: speaker_order[person['id']])
-        # Leaders belong to this event, independently of the person's global role.
-        # Explicit event leaders take precedence over a person's role elsewhere.
-        # Keep legacy moderator inference only when this event has no leader links.
-        explicit_leaders = f['leaders'] or []
-        leaders_by_id = {} if explicit_leaders else {p['id']: p for p in linked if p['role'] == 'Модератор'}
-        for link in f['leaders'] or []:
-            pid = link if isinstance(link, str) else link['id']
-            if pid not in people or not people[pid]['name']:
-                raise ValueError(f'{ident}: unresolved leader link')
-            leaders_by_id[pid] = people[pid]
-        leaders = sorted(leaders_by_id.values(), key=lambda person: speaker_order[person['id']])
-        if explicit_leaders:
-            linked = [dict(p, role='Модератор' if p['id'] in leaders_by_id else 'Спикер') for p in linked]
+        # Roles describe participation in this event, never a person's global card.
+        def role_links(values, role, label):
+            result = {}
+            for link in values or []:
+                pid = link if isinstance(link, str) else link['id']
+                if pid not in people or not people[pid]['name']:
+                    raise ValueError(f'{ident}: unresolved {label} link')
+                result[pid] = dict(people[pid], role=role)
+            return sorted(result.values(), key=lambda person: speaker_order[person['id']])
+        linked = role_links(f['speakers'], 'Спикер', 'speaker')
+        moderators = role_links(f['moderators'], 'Модератор', 'moderator')
+        leaders = role_links(f['leaders'], 'Руководитель', 'leader')
         venue, room = scalar(f['venue']), scalar(f['room'])
         place = ' · '.join(x for x in (venue, 'ауд. ' + room if room else '') if x)
         place = place or ('Онлайн' if attendance == 'Онлайн' else 'Место уточняется')
@@ -233,8 +226,11 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             'datePending': False, 'topic': topic, 'format': kind, 'attendance': attendance,
             'venue': venue, 'room': room, 'place': place, 'code': scalar(f['code']),
             'partners': [scalar(f['partner'])] if scalar(f['partner']) else [],
-            'speakers': [p['name'] for p in linked if p['role'] != 'Модератор'],
+            'participationSchemaVersion': 2,
+            'speakers': [p['name'] for p in linked],
             'speakerDetails': linked,
+            'moderators': [p['name'] for p in moderators], 'moderatorDetails': moderators,
+            'leaderDetails': leaders,
             # Display affiliation for event leaders; never include their position.
             'leaders': list(dict.fromkeys(
                 ', '.join(value for value in (p['name'], p['organization']) if value)
@@ -276,6 +272,13 @@ def validate_snapshot(snapshot, allow_empty=False):
         for key in ('registrationUrl', 'onlineUrl'):
             safe_url(e[key])
         validate_intervals(e)
+        if e.get('participationSchemaVersion') == 2:
+            for key, role in [('speakerDetails','Спикер'),('moderatorDetails','Модератор'),('leaderDetails','Руководитель')]:
+                group=e.get(key)
+                if not isinstance(group,list) or any(not isinstance(p,dict) or any(not isinstance(p.get(k),str) for k in ('id','name','position','organization','role')) or p['role']!=role for p in group):
+                    raise ValueError('Invalid event participation role')
+                if len({p['id'] for p in group})!=len(group):raise ValueError('Duplicate participant in role')
+            if e.get('moderators') != [p['name'] for p in e['moderatorDetails']]:raise ValueError('Incomplete moderator list')
 
 
 def bridge_html(snapshot):
