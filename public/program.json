@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T07:10:57.938637+00:00",
+  "generatedAt": "2026-11-05T09:30:34.948855+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 65,
@@ -1053,6 +1053,77 @@
       "updatedAt": "2026-11-03T08:32:48.000Z"
     },
     {
+      "id": "section-acc",
+      "title": "Учетно-аналитическое обеспечение деятельности современных предприятий",
+      "translation": "Accounting and analytical support for modern enterprises",
+      "date": "2026-11-12",
+      "day": 12,
+      "start": "15:00",
+      "end": "17:00",
+      "startsAt": "2026-11-12T15:00:00+05:00",
+      "endsAt": "2026-11-12T17:00:00+05:00",
+      "intervals": [],
+      "datePending": false,
+      "topic": "econ",
+      "format": "Секция",
+      "attendance": "Очно и онлайн",
+      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "N210",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N210",
+      "code": "ACS",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [],
+      "speakerDetails": [],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [
+        {
+          "id": "recaXAObhHu60KVTB",
+          "name": "Ольга Савостина",
+          "position": "Доцент",
+          "organization": "УрФУ",
+          "role": "Руководитель"
+        },
+        {
+          "id": "recXFmMLphidE5W2p",
+          "name": "Елена Синянская",
+          "position": "Доцент",
+          "organization": "УрФУ",
+          "role": "Руководитель"
+        },
+        {
+          "id": "recPgYfhsJprfk6ed",
+          "name": "Лариса Юрьева",
+          "position": "Профессор",
+          "organization": "УрФУ",
+          "role": "Руководитель"
+        }
+      ],
+      "leaders": [
+        "Ольга Савостина, УрФУ",
+        "Елена Синянская, УрФУ",
+        "Лариса Юрьева, УрФУ"
+      ],
+      "summary": "",
+      "content": {
+        "intro": "",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": false,
+      "registrationUrl": "",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-05T09:22:11.000Z"
+    },
+    {
       "id": "reception",
       "title": "Вечерний прием",
       "translation": "",
@@ -1196,61 +1267,6 @@
       "canJoin": false,
       "feature": false,
       "updatedAt": "2026-10-14T10:12:24.000Z"
-    },
-    {
-      "id": "section-acc",
-      "title": "Учет и анализ в управлении бизнесом",
-      "translation": "Accounting and analysis in business management",
-      "date": "2026-11-13",
-      "day": 13,
-      "start": "10:00",
-      "end": "12:00",
-      "startsAt": "2026-11-13T10:00:00+05:00",
-      "endsAt": "2026-11-13T12:00:00+05:00",
-      "intervals": [],
-      "datePending": false,
-      "topic": "econ",
-      "format": "Секция",
-      "attendance": "Очно и онлайн",
-      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "code": "ACC",
-      "partners": [],
-      "participationSchemaVersion": 2,
-      "speakers": [],
-      "speakerDetails": [],
-      "moderators": [],
-      "moderatorDetails": [],
-      "leaderDetails": [
-        {
-          "id": "recPgYfhsJprfk6ed",
-          "name": "Лариса Юрьева",
-          "position": "Профессор",
-          "organization": "УрФУ",
-          "role": "Руководитель"
-        }
-      ],
-      "leaders": [
-        "Лариса Юрьева, УрФУ"
-      ],
-      "summary": "",
-      "content": {
-        "intro": "",
-        "agenda": "",
-        "formatResult": "",
-        "audience": "",
-        "other": ""
-      },
-      "language": "",
-      "interpretation": "",
-      "invitationOnly": false,
-      "separateRegistration": false,
-      "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
-      "feature": false,
-      "updatedAt": "2026-10-09T10:01:45.000Z"
     },
     {
       "id": "section-dti",
@@ -3626,8 +3642,8 @@
     },
     {
       "id": "section-igt",
-      "title": "Инновационные и «зеленые» технологии по секторам экономики",
-      "translation": "Innovative and green technologies by economic sectors",
+      "title": "Инновационные и зеленые технологии в промышленности, строительстве, энергетике и социально-экономических системах",
+      "translation": "Innovative and green technologies in industry, construction, energy and socio-economic systems",
       "date": "2026-11-14",
       "day": 14,
       "start": "12:30",
@@ -3642,7 +3658,7 @@
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
       "room": "",
       "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "code": "IGT",
+      "code": "IGS",
       "partners": [],
       "participationSchemaVersion": 2,
       "speakers": [],
@@ -3693,7 +3709,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-10-09T10:01:45.000Z"
+      "updatedAt": "2026-11-05T09:22:11.000Z"
     },
     {
       "id": "section-imr",
