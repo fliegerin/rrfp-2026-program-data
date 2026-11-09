@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T12:41:59.152010+00:00",
+  "generatedAt": "2026-11-09T15:11:43.924312+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 70,
@@ -1154,7 +1154,6 @@
         "Станислав Березин",
         "Андрей Бриль",
         "Павел Зубакин",
-        "Михаил Иванов",
         "Ринат Иржанов",
         "Светлана Майер",
         "Андрей Медведев",
@@ -1193,13 +1192,6 @@
           "name": "Павел Зубакин",
           "position": "Директор",
           "organization": "Екатеринбургский Центральный парк культуры и отдыха имени В. В. Маяковского",
-          "role": "Спикер"
-        },
-        {
-          "id": "recFHL6KsK7cdQTna",
-          "name": "Михаил Иванов",
-          "position": "Генеральный директор",
-          "organization": "Транспортная компания «Сторас»",
           "role": "Спикер"
         },
         {
@@ -1303,7 +1295,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T12:41:36.000Z"
+      "updatedAt": "2026-11-09T15:11:17.000Z"
     },
     {
       "id": "china-symposium",
@@ -3843,9 +3835,9 @@
       "moderatorDetails": [],
       "leaderDetails": [],
       "leaders": [],
-      "summary": "",
+      "summary": "Сбор экскурсии – у стойки регистрации (блок О, возле лестниц)",
       "content": {
-        "intro": "",
+        "intro": "Сбор экскурсии – у стойки регистрации (блок О, возле лестниц)",
         "agenda": "",
         "formatResult": "",
         "audience": "",
@@ -3859,7 +3851,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-06T12:59:03.000Z"
+      "updatedAt": "2026-11-09T13:08:43.000Z"
     },
     {
       "id": "vtb-agreement",
