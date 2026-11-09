@@ -35,9 +35,9 @@ FIELDS = {
     'formatResult': 'fldcUBVWxlIhiup9m', 'audience': 'fldpCm7vf77tKwaGY',
     'other': 'fldJNIxKjM1CUM5JL', 'sectionTalks': 'fld8syI8PI5zksKTc',
 }
-SPEAKER_FIELDS = {'name': 'fldhcc2gNElwvOOOb', 'position': 'fldEBD7hccsQzYRGx',
+SPEAKER_FIELDS = {'name': 'fldhcc2gNElwvOOOb', 'fullName': 'fldLYeK0YDBgx0G4e',
+                  'position': 'fldEBD7hccsQzYRGx',
                   'organization': 'fldEWdOmzLYElZ7oc', 'role': 'fldjIOyhIgduHk8n2'}
-SPEAKER_FULL_NAME_FIELD = 'fldLYeK0YDBgx0G4e'
 SPEAKER_SORT_FIELD = 'fldcehg1WbO2RyEMA'  # Airtable: Фамилия для сортировки
 TOPICS = {'Устойчивое развитие': 'esg', 'Экономика и бизнес': 'econ',
           'Технологии и данные': 'tech', 'Образование и люди': 'people',
@@ -173,7 +173,7 @@ def build_snapshot(event_records, speaker_records, mode='published'):
         values = cells(record)
         person = {'id': record['id'], **{k: scalar(values.get(v)) for k, v in SPEAKER_FIELDS.items()}}
         people[record['id']] = person
-        full_names[record['id']] = scalar(values.get(SPEAKER_FULL_NAME_FIELD))
+        full_names[record['id']] = person.pop('fullName')
         # Saved exports without the helper field use the same given-name-first convention.
         surname = scalar(values.get(SPEAKER_SORT_FIELD)) or person['name'].split(' ')[-1]
         speaker_order[record['id']] = tuple(
@@ -417,7 +417,7 @@ def main():
                 raise ValueError('Set AIRTABLE_TOKEN in the private runner environment')
             events = fetch_records(TABLES['events'], FIELDS.values(), token)
             time.sleep(.25)
-            speakers = fetch_records(TABLES['speakers'], (*SPEAKER_FIELDS.values(), SPEAKER_SORT_FIELD, SPEAKER_FULL_NAME_FIELD), token)
+            speakers = fetch_records(TABLES['speakers'], (*SPEAKER_FIELDS.values(), SPEAKER_SORT_FIELD), token)
         snapshot = build_snapshot(events, speakers, args.mode)
         write_snapshot(snapshot, args.output_dir, args.allow_empty)
         print(f"Generated {snapshot['recordCount']} events ({args.mode}); snapshot validated.")
