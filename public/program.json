@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T12:29:32.162632+00:00",
+  "generatedAt": "2026-11-09T12:41:59.152010+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 70,
@@ -1151,9 +1151,14 @@
       "participationSchemaVersion": 2,
       "speakers": [
         "Сергей Афонцев",
+        "Станислав Березин",
+        "Андрей Бриль",
+        "Павел Зубакин",
         "Михаил Иванов",
+        "Ринат Иржанов",
         "Светлана Майер",
         "Андрей Медведев",
+        "Валерий Пиличев",
         "Мария Поздеева",
         "Владимир Сальников",
         "Антон Табах",
@@ -1170,10 +1175,38 @@
           "role": "Спикер"
         },
         {
+          "id": "rechcjQ8P2GHGSeTA",
+          "name": "Станислав Березин",
+          "position": "Сооснователь и совладелец",
+          "organization": "«Фабрика трогательных стендов»",
+          "role": "Спикер"
+        },
+        {
+          "id": "recEbOlKkMeMUiWFW",
+          "name": "Андрей Бриль",
+          "position": "Вице-президент",
+          "organization": "НП «Российская Гильдия управляющих и девелоперов»",
+          "role": "Спикер"
+        },
+        {
+          "id": "recFxFP1IdQq3IbLT",
+          "name": "Павел Зубакин",
+          "position": "Директор",
+          "organization": "Екатеринбургский Центральный парк культуры и отдыха имени В. В. Маяковского",
+          "role": "Спикер"
+        },
+        {
           "id": "recFHL6KsK7cdQTna",
           "name": "Михаил Иванов",
           "position": "Генеральный директор",
           "organization": "Транспортная компания «Сторас»",
+          "role": "Спикер"
+        },
+        {
+          "id": "recHGNsjrUbxdZIgV",
+          "name": "Ринат Иржанов",
+          "position": "Вице-президент, управляющий Уральским филиалом",
+          "organization": "ПСБ",
           "role": "Спикер"
         },
         {
@@ -1188,6 +1221,13 @@
           "name": "Андрей Медведев",
           "position": "Директор",
           "organization": "Компания «АЙ-ТОР»",
+          "role": "Спикер"
+        },
+        {
+          "id": "recZINeRuwl31xuCl",
+          "name": "Валерий Пиличев",
+          "position": "Директор",
+          "organization": "Свердловский областной фонд поддержки предпринимательства",
           "role": "Спикер"
         },
         {
@@ -1263,7 +1303,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-06T12:54:55.000Z"
+      "updatedAt": "2026-11-09T12:41:36.000Z"
     },
     {
       "id": "china-symposium",
@@ -1272,9 +1312,9 @@
       "date": "2026-11-12",
       "day": 12,
       "start": "14:00",
-      "end": "18:00",
+      "end": "16:30",
       "startsAt": "2026-11-12T14:00:00+05:00",
-      "endsAt": "2026-11-12T18:00:00+05:00",
+      "endsAt": "2026-11-12T16:30:00+05:00",
       "intervals": [],
       "datePending": false,
       "topic": "econ",
@@ -1424,7 +1464,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-06T12:54:55.000Z"
+      "updatedAt": "2026-11-09T12:37:22.000Z"
     },
     {
       "id": "esg",
@@ -5930,20 +5970,7 @@
       "end": "14:00",
       "startsAt": "2026-11-14T10:00:00+05:00",
       "endsAt": "2026-11-14T14:00:00+05:00",
-      "intervals": [
-        {
-          "start": "10:00",
-          "end": "12:00",
-          "startsAt": "2026-11-14T10:00:00+05:00",
-          "endsAt": "2026-11-14T12:00:00+05:00"
-        },
-        {
-          "start": "12:30",
-          "end": "14:00",
-          "startsAt": "2026-11-14T12:30:00+05:00",
-          "endsAt": "2026-11-14T14:00:00+05:00"
-        }
-      ],
+      "intervals": [],
       "datePending": false,
       "topic": "econ",
       "format": "Секция",
@@ -5976,7 +6003,7 @@
         "agenda": "",
         "formatResult": "",
         "audience": "",
-        "other": "**Время работы секции (с перерывами)**\n10:00–12:00\n12:30–14:00"
+        "other": ""
       },
       "language": "",
       "interpretation": "",
@@ -5986,7 +6013,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T12:28:39.000Z",
+      "updatedAt": "2026-11-09T12:31:33.000Z",
       "sectionTalks": [
         {
           "names": [
