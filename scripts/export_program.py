@@ -33,10 +33,11 @@ FIELDS = {
     'status': 'fldTDSuaZjCPDYqCj', 'updatedAt': 'fldUH4o9rZ1LSmqPE',
     'intro': 'flddC3yWtvEtE18js', 'agenda': 'fld1qKTV2wsP9Ax8A',
     'formatResult': 'fldcUBVWxlIhiup9m', 'audience': 'fldpCm7vf77tKwaGY',
-    'other': 'fldJNIxKjM1CUM5JL',
+    'other': 'fldJNIxKjM1CUM5JL', 'sectionTalks': 'fld8syI8PI5zksKTc',
 }
 SPEAKER_FIELDS = {'name': 'fldhcc2gNElwvOOOb', 'position': 'fldEBD7hccsQzYRGx',
                   'organization': 'fldEWdOmzLYElZ7oc', 'role': 'fldjIOyhIgduHk8n2'}
+SPEAKER_FULL_NAME_FIELD = 'fldLYeK0YDBgx0G4e'
 SPEAKER_SORT_FIELD = 'fldcehg1WbO2RyEMA'  # Airtable: Фамилия для сортировки
 TOPICS = {'Устойчивое развитие': 'esg', 'Экономика и бизнес': 'econ',
           'Технологии и данные': 'tech', 'Образование и люди': 'people',
@@ -150,12 +151,29 @@ def timestamp(value):
     return dt.astimezone(TZ)
 
 
+def parse_section_talks(value, ident):
+    """Read each Airtable paragraph as a line of speakers and a line with the title."""
+    text = scalar(value).replace('\r\n', '\n').replace('\r', '\n')
+    talks = []
+    for block in re.split(r'\n[^\S\n]*\n', text) if text else []:
+        lines = block.strip().splitlines()
+        if len(lines) != 2:
+            raise ValueError(f'{ident}: each section talk needs two lines, names and title')
+        names = [name.strip() for name in lines[0].split(';')]
+        title = lines[1].strip()
+        if not all(names) or not title:
+            raise ValueError(f'{ident}: missing section talk names or title')
+        talks.append({'names': names, 'title': title})
+    return talks
+
+
 def build_snapshot(event_records, speaker_records, mode='published'):
-    people, speaker_order = {}, {}
+    people, speaker_order, full_names = {}, {}, {}
     for record in speaker_records:
         values = cells(record)
         person = {'id': record['id'], **{k: scalar(values.get(v)) for k, v in SPEAKER_FIELDS.items()}}
         people[record['id']] = person
+        full_names[record['id']] = scalar(values.get(SPEAKER_FULL_NAME_FIELD))
         # Saved exports without the helper field use the same given-name-first convention.
         surname = scalar(values.get(SPEAKER_SORT_FIELD)) or person['name'].split(' ')[-1]
         speaker_order[record['id']] = tuple(
@@ -244,6 +262,11 @@ def build_snapshot(event_records, speaker_records, mode='published'):
             'feature': ident in ('econ-plenary', 'education-plenary', 'esg'),
             'updatedAt': scalar(f['updatedAt']),
         }
+        if kind == 'Секция':
+            event['sectionTalks'] = parse_section_talks(f['sectionTalks'], ident)
+            event['leaderDetails'] = [
+                dict(person, name=full_names[person['id']] or person['name']) for person in leaders
+            ]
         events.append(event)
     events.sort(key=lambda e: (e['date'], e['start'] or '99:99', e['id']))
     return {'schemaVersion': 1, 'generatedAt': datetime.now(timezone.utc).isoformat(),
@@ -272,6 +295,14 @@ def validate_snapshot(snapshot, allow_empty=False):
         for key in ('registrationUrl', 'onlineUrl'):
             safe_url(e[key])
         validate_intervals(e)
+        talks = e.get('sectionTalks', [])
+        if not isinstance(talks, list) or any(
+            not isinstance(talk, dict) or not isinstance(talk.get('title'), str) or not talk['title'].strip()
+            or not isinstance(talk.get('names'), list) or not talk['names']
+            or any(not isinstance(name, str) or not name.strip() for name in talk['names'])
+            for talk in talks
+        ):
+            raise ValueError(f"{e['id']}: invalid section talks")
         if e.get('participationSchemaVersion') == 2:
             for key, role in [('speakerDetails','Спикер'),('moderatorDetails','Модератор'),('leaderDetails','Руководитель')]:
                 group=e.get(key)
@@ -386,7 +417,7 @@ def main():
                 raise ValueError('Set AIRTABLE_TOKEN in the private runner environment')
             events = fetch_records(TABLES['events'], FIELDS.values(), token)
             time.sleep(.25)
-            speakers = fetch_records(TABLES['speakers'], (*SPEAKER_FIELDS.values(), SPEAKER_SORT_FIELD), token)
+            speakers = fetch_records(TABLES['speakers'], (*SPEAKER_FIELDS.values(), SPEAKER_SORT_FIELD, SPEAKER_FULL_NAME_FIELD), token)
         snapshot = build_snapshot(events, speakers, args.mode)
         write_snapshot(snapshot, args.output_dir, args.allow_empty)
         print(f"Generated {snapshot['recordCount']} events ({args.mode}); snapshot validated.")
