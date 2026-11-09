@@ -36,7 +36,7 @@ FIELDS = {
     'other': 'fldJNIxKjM1CUM5JL', 'sectionTalks': 'fld8syI8PI5zksKTc',
 }
 SPEAKER_FIELDS = {'name': 'fldhcc2gNElwvOOOb', 'fullName': 'fldLYeK0YDBgx0G4e',
-                  'position': 'fldEBD7hccsQzYRGx',
+                  'position': 'fldEBD7hccsQzYRGx', 'sectionPosition': 'fld2giMiHQksty4OK',
                   'organization': 'fldEWdOmzLYElZ7oc', 'role': 'fldjIOyhIgduHk8n2'}
 SPEAKER_SORT_FIELD = 'fldcehg1WbO2RyEMA'  # Airtable: Фамилия для сортировки
 TOPICS = {'Устойчивое развитие': 'esg', 'Экономика и бизнес': 'econ',
@@ -168,12 +168,13 @@ def parse_section_talks(value, ident):
 
 
 def build_snapshot(event_records, speaker_records, mode='published'):
-    people, speaker_order, full_names = {}, {}, {}
+    people, speaker_order, full_names, section_positions = {}, {}, {}, {}
     for record in speaker_records:
         values = cells(record)
         person = {'id': record['id'], **{k: scalar(values.get(v)) for k, v in SPEAKER_FIELDS.items()}}
         people[record['id']] = person
         full_names[record['id']] = person.pop('fullName')
+        section_positions[record['id']] = person.pop('sectionPosition')
         # Saved exports without the helper field use the same given-name-first convention.
         surname = scalar(values.get(SPEAKER_SORT_FIELD)) or person['name'].split(' ')[-1]
         speaker_order[record['id']] = tuple(
@@ -265,7 +266,9 @@ def build_snapshot(event_records, speaker_records, mode='published'):
         if kind == 'Секция':
             event['sectionTalks'] = parse_section_talks(f['sectionTalks'], ident)
             event['leaderDetails'] = [
-                dict(person, name=full_names[person['id']] or person['name']) for person in leaders
+                dict(person, name=full_names[person['id']] or person['name'],
+                     position=section_positions[person['id']] or person['position'])
+                for person in leaders
             ]
         events.append(event)
     events.sort(key=lambda e: (e['date'], e['start'] or '99:99', e['id']))
