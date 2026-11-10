@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T07:00:39.077942+00:00",
+  "generatedAt": "2026-11-10T10:06:38.823003+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 74,
@@ -248,10 +248,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/x0w0crvuh5ew",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:10.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -405,10 +405,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/s4mkksuuubs6",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:31.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -891,10 +891,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/wwmb5dxudmm8",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:21.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -1677,10 +1677,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/krifrwuckq8a",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-06T10:47:17.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": []
     },
     {
@@ -2686,10 +2686,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/bkdwtepop58h",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:03:38.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -2927,8 +2927,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "М-212",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. М-212",
       "code": "DBT",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2964,7 +2964,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:10.000Z",
+      "updatedAt": "2026-11-10T08:06:39.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -4593,10 +4593,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/mllwiqt1yqjp",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:10.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -5204,10 +5204,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/tb4kw6t30rqb",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:15.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -5391,10 +5391,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/ykai2utmajo4",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:03:47.000Z",
+      "updatedAt": "2026-11-10T10:06:15.000Z",
       "sectionTalks": [
         {
           "names": [
