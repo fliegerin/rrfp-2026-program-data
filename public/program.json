@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T04:07:10.427171+00:00",
+  "generatedAt": "2026-11-10T04:32:31.517785+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
-  "recordCount": 70,
+  "recordCount": 74,
   "events": [
     {
       "id": "education-contest",
@@ -1764,6 +1764,116 @@
       "canJoin": false,
       "feature": false,
       "updatedAt": "2026-11-06T12:59:03.000Z"
+    },
+    {
+      "id": "open-lecture-sinha",
+      "title": "Открытая лекция «Динамика международной торговли»",
+      "translation": "",
+      "date": "2026-11-13",
+      "day": 13,
+      "start": "09:00",
+      "end": "09:45",
+      "startsAt": "2026-11-13T09:00:00+05:00",
+      "endsAt": "2026-11-13T09:45:00+05:00",
+      "intervals": [],
+      "datePending": false,
+      "topic": "people",
+      "format": "Специальное мероприятие",
+      "attendance": "Очно",
+      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "уточняется",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. уточняется",
+      "code": "",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [
+        "Дипанкар Синха"
+      ],
+      "speakerDetails": [
+        {
+          "id": "recTwkUzxKA5x7O1q",
+          "name": "Дипанкар Синха",
+          "position": "Профессор, заведующий кафедрой торговых операций и логистики",
+          "organization": "Индийский институт внешней торговли (IIFT), Индия",
+          "role": "Спикер"
+        }
+      ],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [],
+      "leaders": [],
+      "summary": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+      "content": {
+        "intro": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "Английский",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": true,
+      "registrationUrl": "https://forms.yandex.ru/u/6af15d1597a3770fa4c60d93",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-10T04:31:30.000Z"
+    },
+    {
+      "id": "open-lecture-diaz-soloaga",
+      "title": "Открытая лекция «Человеческое лицо инноваций: характер, цель и ответственный бизнес»",
+      "translation": "",
+      "date": "2026-11-13",
+      "day": 13,
+      "start": "09:50",
+      "end": "10:35",
+      "startsAt": "2026-11-13T09:50:00+05:00",
+      "endsAt": "2026-11-13T10:35:00+05:00",
+      "intervals": [],
+      "datePending": false,
+      "topic": "people",
+      "format": "Специальное мероприятие",
+      "attendance": "Очно",
+      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "уточняется",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. уточняется",
+      "code": "",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [
+        "Аврора Диас Солоага"
+      ],
+      "speakerDetails": [
+        {
+          "id": "rechGOExEHUx5ffDb",
+          "name": "Аврора Диас Солоага",
+          "position": "Заместитель председателя по вопросам образования Евразийского отделения PRME; старший преподаватель Школы предпринимательства",
+          "organization": "Алматинский университет менеджмента (AlmaU), Казахстан",
+          "role": "Спикер"
+        }
+      ],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [],
+      "leaders": [],
+      "summary": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+      "content": {
+        "intro": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "Английский",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": true,
+      "registrationUrl": "https://forms.yandex.ru/u/6af15d1597a3770fa4c60d93",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-10T04:31:30.000Z"
     },
     {
       "id": "recNhe6eP3ok7jWgJ",
@@ -7163,6 +7273,116 @@
           "title": "Развитие транспортно-пересадочных узлов (ТПУ) как драйвер комплексного освоения прилегающих территорий: инфраструктурные и градостроительные эффекты"
         }
       ]
+    },
+    {
+      "id": "open-lecture-ma-yali",
+      "title": "Открытая лекция «Карьерные перспективы студентов экономических и управленческих направлений в Китае»",
+      "translation": "",
+      "date": "2026-11-14",
+      "day": 14,
+      "start": "10:15",
+      "end": "11:00",
+      "startsAt": "2026-11-14T10:15:00+05:00",
+      "endsAt": "2026-11-14T11:00:00+05:00",
+      "intervals": [],
+      "datePending": false,
+      "topic": "people",
+      "format": "Специальное мероприятие",
+      "attendance": "Очно",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ",
+      "room": "H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ · ауд. H303",
+      "code": "",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [
+        "Ма Яли"
+      ],
+      "speakerDetails": [
+        {
+          "id": "recj5zZSqgqIpU2ps",
+          "name": "Ма Яли",
+          "position": "Заместитель декана Азиатско-Австралийского бизнес-колледжа",
+          "organization": "Ляонинский университет, Китай",
+          "role": "Спикер"
+        }
+      ],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [],
+      "leaders": [],
+      "summary": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+      "content": {
+        "intro": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "Английский",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": true,
+      "registrationUrl": "https://forms.yandex.ru/u/6af15d1597a3770fa4c60d93",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-10T04:31:30.000Z"
+    },
+    {
+      "id": "open-lecture-nitin-singh",
+      "title": "Открытая лекция «Использование искусственного интеллекта в нефинансовой отчётности (XBRL)»",
+      "translation": "",
+      "date": "2026-11-14",
+      "day": 14,
+      "start": "11:00",
+      "end": "11:45",
+      "startsAt": "2026-11-14T11:00:00+05:00",
+      "endsAt": "2026-11-14T11:45:00+05:00",
+      "intervals": [],
+      "datePending": false,
+      "topic": "people",
+      "format": "Специальное мероприятие",
+      "attendance": "Очно",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ",
+      "room": "H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ · ауд. H303",
+      "code": "",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [
+        "Нитин Сингх"
+      ],
+      "speakerDetails": [
+        {
+          "id": "recYLQLxllpAWx9eo",
+          "name": "Нитин Сингх",
+          "position": "Профессор",
+          "organization": "Индийский институт менеджмента в Ранчи (IIM Ranchi), Индия",
+          "role": "Спикер"
+        }
+      ],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [],
+      "leaders": [],
+      "summary": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+      "content": {
+        "intro": "Из серии открытых лекций иностранных спикеров для студентов ИнЭУ. Количество мест ограничено.",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "Английский",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": true,
+      "registrationUrl": "https://forms.yandex.ru/u/6af15d1597a3770fa4c60d93",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-10T04:31:30.000Z"
     },
     {
       "id": "coffee-14-1130",
