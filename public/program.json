@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T05:32:09.992984+00:00",
+  "generatedAt": "2026-11-11T06:35:40.955849+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
-  "recordCount": 76,
+  "recordCount": 77,
   "events": [
     {
       "id": "education-contest",
@@ -214,8 +214,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-210",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-210",
+      "room": "O210",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O210",
       "code": "DEV",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -251,7 +251,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/x0w0crvuh5ew",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-10T10:06:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -857,8 +857,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-211",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-211",
+      "room": "N211",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N211",
       "code": "ACC",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -894,7 +894,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/wwmb5dxudmm8",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-10T10:06:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -1127,6 +1127,51 @@
       "canJoin": false,
       "feature": false,
       "updatedAt": "2026-11-06T03:34:32.000Z"
+    },
+    {
+      "id": "group-photo",
+      "title": "Общее фото",
+      "translation": "",
+      "date": "2026-11-12",
+      "day": 12,
+      "start": "13:05",
+      "end": null,
+      "startsAt": "2026-11-12T13:05:00+05:00",
+      "endsAt": null,
+      "intervals": [],
+      "datePending": false,
+      "topic": "general",
+      "format": "Специальное мероприятие",
+      "attendance": "Очно",
+      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "Актовый зал",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Актовый зал",
+      "code": "",
+      "partners": [],
+      "participationSchemaVersion": 2,
+      "speakers": [],
+      "speakerDetails": [],
+      "moderators": [],
+      "moderatorDetails": [],
+      "leaderDetails": [],
+      "leaders": [],
+      "summary": "В конце главной пленарной сессии модератор пригласит спикеров, гостей и представителей бизнеса на общее фото в актовом зале.",
+      "content": {
+        "intro": "В конце главной пленарной сессии модератор пригласит спикеров, гостей и представителей бизнеса на общее фото в актовом зале.",
+        "agenda": "",
+        "formatResult": "",
+        "audience": "",
+        "other": ""
+      },
+      "language": "",
+      "interpretation": "",
+      "invitationOnly": false,
+      "separateRegistration": false,
+      "registrationUrl": "",
+      "onlineUrl": "",
+      "canJoin": false,
+      "feature": false,
+      "updatedAt": "2026-11-11T06:34:55.000Z"
     },
     {
       "id": "business-roundtable-1",
@@ -1619,8 +1664,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-211",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-211",
+      "room": "N211",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N211",
       "code": "ACS",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1672,7 +1717,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/wwmb5dxudmm8",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": []
     },
     {
@@ -1781,8 +1826,8 @@
       "format": "Специальное мероприятие",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "уточняется",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. уточняется",
+      "room": "H303",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1818,7 +1863,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T04:31:30.000Z"
+      "updatedAt": "2026-11-11T06:17:58.000Z"
     },
     {
       "id": "open-lecture-diaz-soloaga",
@@ -1836,8 +1881,8 @@
       "format": "Специальное мероприятие",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "уточняется",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. уточняется",
+      "room": "H303",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1873,7 +1918,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T04:31:30.000Z"
+      "updatedAt": "2026-11-11T06:18:06.000Z"
     },
     {
       "id": "recNhe6eP3ok7jWgJ",
@@ -1904,8 +1949,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "L-204",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L-204",
+      "room": "L204",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L204",
       "code": "ESF",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1941,7 +1986,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/avvype9nvtif",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": []
     },
     {
@@ -1960,8 +2005,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "L-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L-304",
+      "room": "L304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L304",
       "code": "DTI",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2005,7 +2050,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/tek6cg9hx8kj",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -2110,8 +2155,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-211",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-211",
+      "room": "N211",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N211",
       "code": "GCH",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2155,7 +2200,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/gmileki4kjgm",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -2620,8 +2665,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "О-207",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О-207",
+      "room": "О207",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О207",
       "code": "APM",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2665,7 +2710,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/bkdwtepop58h",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-10T10:06:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -2741,8 +2786,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "M-302",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. M-302",
+      "room": "M302",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. M302",
       "code": "ASA",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2786,7 +2831,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/g40wgv8m8p5r",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -2903,8 +2948,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "М-212",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. М-212",
+      "room": "М212",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. М212",
       "code": "DBT",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -2940,7 +2985,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-11T05:31:35.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -3051,8 +3096,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-304",
+      "room": "Q304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q304",
       "code": "IBP",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3088,7 +3133,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/k8hc4hg87u74",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -3197,8 +3242,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "О-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О-304",
+      "room": "О304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О304",
       "code": "MAR",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3242,7 +3287,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/ql07v2oas0b3",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -3348,8 +3393,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "L-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L-304",
+      "room": "L304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. L304",
       "code": "OCM",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3385,7 +3430,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/tek6cg9hx8kj",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -3490,8 +3535,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-301",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-301",
+      "room": "N301",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N301",
       "code": "SMI",
       "partners": [
         "Высшей школой производственного менеджмента Института промышленного менеджмента, экономики и торговли Петербургского политехнического университета Петра Великого"
@@ -3537,7 +3582,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/fcdj1m3c7p0m",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -4014,9 +4059,9 @@
       "topic": "general",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Весь кампус УрФУ в Новокольцовском",
-      "room": "",
-      "place": "Весь кампус УрФУ в Новокольцовском",
+      "venue": "Кампус УрФУ в Новокольцовском",
+      "room": "Блок O, у лестниц",
+      "place": "Кампус УрФУ в Новокольцовском · ауд. Блок O, у лестниц",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -4042,7 +4087,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T14:49:50.000Z"
+      "updatedAt": "2026-11-11T06:15:59.000Z"
     },
     {
       "id": "schools-universities",
@@ -4294,8 +4339,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-301",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-301",
+      "room": "N301",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N301",
       "code": "CCE",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -4339,7 +4384,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -4412,8 +4457,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-304",
+      "room": "Q304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q304",
       "code": "DIB",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -4449,7 +4494,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/k8hc4hg87u74",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T05:31:35.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -4690,8 +4735,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-301",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-301",
+      "room": "N301",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N301",
       "code": "ECL",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -4735,7 +4780,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/nmkvp19iy84c",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": []
     },
     {
@@ -4887,8 +4932,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-303",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-303",
+      "room": "Q303",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q303",
       "code": "MSY",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -4932,7 +4977,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/hsc72hda50kw",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -5100,9 +5145,9 @@
       "topic": "general",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Кампус УрФУ в Новокольцовском · блок О, у лестниц",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · блок О, у лестниц",
+      "venue": "Кампус УрФУ в Новокольцовском",
+      "room": "Блок О, у лестниц",
+      "place": "Кампус УрФУ в Новокольцовском · ауд. Блок О, у лестниц",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -5128,7 +5173,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-11T04:04:43.000Z"
+      "updatedAt": "2026-11-11T06:14:52.000Z"
     },
     {
       "id": "international-student-community",
@@ -5146,8 +5191,8 @@
       "format": "Встреча",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском",
+      "room": "R102",
+      "place": "Кампус УрФУ в Новокольцовском · ауд. R102",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -5173,7 +5218,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T14:49:39.000Z"
+      "updatedAt": "2026-11-11T06:15:36.000Z"
     },
     {
       "id": "teachers-awards",
@@ -6012,8 +6057,8 @@
       "format": "Секция",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-304",
+      "room": "Q304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q304",
       "code": "FIN",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -6049,7 +6094,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T10:03:47.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -6160,8 +6205,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-303",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-303",
+      "room": "Q303",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q303",
       "code": "GCC",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -6197,7 +6242,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/iqk6ss34yep8",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -6299,8 +6344,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-308",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-308",
+      "room": "O308",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O308",
       "code": "GES",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -6344,7 +6389,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:05.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -6421,8 +6466,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-301",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-301",
+      "room": "O301",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O301",
       "code": "IGT",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -6474,7 +6519,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/hicqidtpsgra",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -6556,8 +6601,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-309",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-309",
+      "room": "O309",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O309",
       "code": "LEG",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -6593,7 +6638,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/ab31t4dwapqu",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -6970,8 +7015,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "О-303",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О-303",
+      "room": "О303",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О303",
       "code": "SOV",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7007,7 +7052,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/n3bg95hkd38r",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7090,8 +7135,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-307",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-307",
+      "room": "O307",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O307",
       "code": "TDM",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7127,7 +7172,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/sdcpcm6wvhsn",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7227,8 +7272,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-305",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-305",
+      "room": "O305",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O305",
       "code": "UPI",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7264,7 +7309,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/h0rbsuyrw04d",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7592,8 +7637,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-304",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-304",
+      "room": "Q304",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q304",
       "code": "CFI",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7629,7 +7674,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/uieno0hnpsd2",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7737,8 +7782,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "О-301",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О-301",
+      "room": "О301",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О301",
       "code": "IGS",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7790,7 +7835,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/hicqidtpsgra",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:01:15.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7865,8 +7910,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "О-308",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О-308",
+      "room": "О308",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. О308",
       "code": "IMM",
       "partners": [
         "Высшей школой экономики"
@@ -7912,7 +7957,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:05.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -7964,8 +8009,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "Q-302",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q-302",
+      "room": "Q302",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Q302",
       "code": "MIG",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -8009,7 +8054,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/bsej7iix9l6a",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -8121,8 +8166,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "O-306",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O-306",
+      "room": "O306",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. O306",
       "code": "SAH",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -8166,7 +8211,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/qvjo7hxa91ye",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -8341,8 +8386,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "",
-      "room": "Q-304",
-      "place": "ауд. Q-304",
+      "room": "Q304",
+      "place": "ауд. Q304",
       "code": "MFB",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -8378,7 +8423,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/do9fxyflogie",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T04:00:03.000Z",
+      "updatedAt": "2026-11-11T06:17:18.000Z",
       "sectionTalks": [
         {
           "names": [
