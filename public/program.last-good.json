@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T09:12:22.662892+00:00",
+  "generatedAt": "2026-11-11T09:45:08.217520+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 77,
@@ -3696,8 +3696,8 @@
       "format": "Панельная дискуссия",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "N-311",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N-311",
+      "room": "N311",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N311",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3895,7 +3895,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-09T07:10:39.000Z"
+      "updatedAt": "2026-11-11T09:15:30.000Z"
     },
     {
       "id": "recdh6YqpuIHuyVvZ",
@@ -3952,7 +3952,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-11T08:38:01.000Z"
+      "updatedAt": "2026-11-11T09:14:21.000Z"
     },
     {
       "id": "vtb-agreement",
@@ -4833,10 +4833,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/pwpqrmsf43lk",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-09T10:04:05.000Z",
+      "updatedAt": "2026-11-11T09:44:01.000Z",
       "sectionTalks": [
         {
           "names": [
