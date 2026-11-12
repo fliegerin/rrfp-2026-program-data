@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T11:37:48.932881+00:00",
+  "generatedAt": "2026-11-12T13:35:21.851374+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -3309,8 +3309,8 @@
       "format": "Секция",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "N311",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N311",
       "code": "LYS",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3346,7 +3346,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-12T05:17:40.000Z",
+      "updatedAt": "2026-11-12T13:33:51.000Z",
       "sectionTalks": [
         {
           "names": [
