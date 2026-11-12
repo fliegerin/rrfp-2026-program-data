@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T10:06:47.783967+00:00",
+  "generatedAt": "2026-11-12T10:17:59.472047+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -1919,23 +1919,10 @@
       "date": "2026-11-13",
       "day": 13,
       "start": "10:00",
-      "end": "14:30",
+      "end": "14:20",
       "startsAt": "2026-11-13T10:00:00+05:00",
-      "endsAt": "2026-11-13T14:30:00+05:00",
-      "intervals": [
-        {
-          "start": "10:00",
-          "end": "12:00",
-          "startsAt": "2026-11-13T10:00:00+05:00",
-          "endsAt": "2026-11-13T12:00:00+05:00"
-        },
-        {
-          "start": "12:30",
-          "end": "14:30",
-          "startsAt": "2026-11-13T12:30:00+05:00",
-          "endsAt": "2026-11-13T14:30:00+05:00"
-        }
-      ],
+      "endsAt": "2026-11-13T14:20:00+05:00",
+      "intervals": [],
       "datePending": false,
       "topic": "econ",
       "format": "Секция",
@@ -1968,18 +1955,98 @@
         "agenda": "",
         "formatResult": "",
         "audience": "",
-        "other": "**Время работы секции (с перерывами)**\n10:00–12:00\n12:30–14:30"
+        "other": ""
       },
       "language": "Английский",
       "interpretation": "Не предусмотрен",
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "https://urfucom.ktalk.ru/avvype9nvtif",
+      "onlineUrl": "https://us06web.zoom.us/j/81674596326?pwd=IvrGuLMbdNqgYRW5fwCyKOza3JTrzg.1",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T06:17:18.000Z",
-      "sectionTalks": []
+      "updatedAt": "2026-11-12T10:16:48.000Z",
+      "sectionTalks": [
+        {
+          "names": [
+            "Dr Kazi Sohag (SPbU)"
+          ],
+          "title": "10:00–10:20 · Economic Sovereignty in the Fragmented World"
+        },
+        {
+          "names": [
+            "Md Monirul Islam (UrFU)"
+          ],
+          "title": "10:20–10:40 · Do environmental taxes curb Europe’s imports of secondary raw materials?"
+        },
+        {
+          "names": [
+            "Faroque Ahmed (UrFU)"
+          ],
+          "title": "10:40–11:00 · Structural resilience under uncertainty: Productive capacities, geopolitical risk and financial stress in BRICS+"
+        },
+        {
+          "names": [
+            "Suleiman Mamman Onimisi (UrFU)"
+          ],
+          "title": "11:00–11:20 · Can skilled immigration buffer regional brain drain? Evidence from Russian regions"
+        },
+        {
+          "names": [
+            "Anastasia Andrianova (UrFU)",
+            "Alexander Markov (UrFU)"
+          ],
+          "title": "11:20–11:40 · Geopolitical Fragmentation and Russia’s Trade Trajectory: Empirical Evidence"
+        },
+        {
+          "names": [
+            "Dr. Fouzia Amin (National Defence University)"
+          ],
+          "title": "11:40–12:00 · Economic Sovereignty in an Era of Geoeconomic Fragmentation: Great Power Competition and the Emerging Multipolar Order"
+        },
+        {
+          "names": [
+            "Anna Gainetdinova"
+          ],
+          "title": "12:00–12:20 · The influence of decomposed oil price shocks on key monetary policy indicators in BRICS countries"
+        },
+        {
+          "names": [
+            "Dr. Oleg Mariev (UrFU)"
+          ],
+          "title": "12:20–12:40 · BRICS Integration and Payment Resilience: Transforming Exports in a Fragmenting World"
+        },
+        {
+          "names": [
+            "Sidra Nazir (UrFU)"
+          ],
+          "title": "12:40–13:00 · Differentiated Resilience: Designing Bloc-Specific Trade Policy under Geopolitical Risk and Fragmentation"
+        },
+        {
+          "names": [
+            "Mir Zat Ullah (UrFU)"
+          ],
+          "title": "13:00–13:20 · Environmental Security and Climate Change in ASEAN Economies under Digitalization and Macro Financial Dynamics"
+        },
+        {
+          "names": [
+            "Zhang Chao (UrFU)"
+          ],
+          "title": "13:20–13:40 · Asymmetric Trade Adjustment under Rising Protectionism: Evidence from Chinese Import Sourcing and Export Markets"
+        },
+        {
+          "names": [
+            "Yulia Sokolova (UrFU)"
+          ],
+          "title": "13:40–14:00 · Physical shocks, transition and the shadow of geopolitical fragmentation: export flows in the BRICS+"
+        },
+        {
+          "names": [
+            "Vsevolod Karass (UrFU)"
+          ],
+          "title": "14:00–14:20 · Sanctions pressure across jurisdictions and Russian industrial production"
+        }
+      ]
     },
     {
       "id": "section-dti",
@@ -3781,7 +3848,7 @@
       "datePending": false,
       "topic": "people",
       "format": "Панельная дискуссия",
-      "attendance": "Очно",
+      "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
       "room": "N311",
       "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N311",
@@ -3828,7 +3895,7 @@
         {
           "id": "reck6j91C1BnCJhqM",
           "name": "Ирина Антонова",
-          "position": "Кандидат экономических наук, доцент, старший научный сотрудник научно-образовательного центра «Умный регион»",
+          "position": "Кандидат экономических наук, доцент, Томский политехнический университет;\nстарший научный сотрудник научно-образовательного центра «Умный регион»",
           "organization": "УрФУ",
           "role": "Спикер"
         },
@@ -3979,10 +4046,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/gfv7mt6x74j6",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T11:32:27.000Z"
+      "updatedAt": "2026-11-12T10:16:15.000Z"
     },
     {
       "id": "recdh6YqpuIHuyVvZ",
@@ -4251,8 +4318,18 @@
           "role": "Спикер"
         }
       ],
-      "moderators": [],
-      "moderatorDetails": [],
+      "moderators": [
+        "Артем Коваленко"
+      ],
+      "moderatorDetails": [
+        {
+          "id": "recIYwLzRYQc1MjcD",
+          "name": "Артем Коваленко",
+          "position": "Директор журнала",
+          "organization": "«Эксперт-Урал»",
+          "role": "Модератор"
+        }
+      ],
       "leaderDetails": [],
       "leaders": [],
       "summary": "Панельная дискуссия о взаимодействии школы, университета, бизнеса и государства в формировании человеческого капитала региона.",
@@ -4271,7 +4348,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-12T09:46:01.000Z"
+      "updatedAt": "2026-11-12T10:10:21.000Z"
     },
     {
       "id": "section-bth",
