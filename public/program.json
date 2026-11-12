@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T07:22:05.366823+00:00",
+  "generatedAt": "2026-11-12T10:06:47.783967+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -1817,9 +1817,9 @@
       "topic": "people",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ",
       "room": "H303",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1855,7 +1855,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-11T06:17:58.000Z"
+      "updatedAt": "2026-11-12T10:02:50.000Z"
     },
     {
       "id": "open-lecture-diaz-soloaga",
@@ -1872,9 +1872,9 @@
       "topic": "people",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ",
       "room": "H303",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -1910,7 +1910,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-11T06:18:06.000Z"
+      "updatedAt": "2026-11-12T10:02:50.000Z"
     },
     {
       "id": "recNhe6eP3ok7jWgJ",
@@ -4192,8 +4192,8 @@
       "format": "Панельная дискуссия",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "Актовый зал",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Актовый зал",
       "code": "",
       "partners": [
         "БФ « СКБ Контур»"
@@ -4271,7 +4271,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-06T12:00:00.000Z"
+      "updatedAt": "2026-11-12T09:46:01.000Z"
     },
     {
       "id": "section-bth",
@@ -5323,8 +5323,8 @@
       "format": "Церемония",
       "attendance": "Очно",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ",
+      "room": "Актовый зал",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. Актовый зал",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -5350,7 +5350,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-10-15T05:47:12.000Z"
+      "updatedAt": "2026-11-12T09:46:16.000Z"
     },
     {
       "id": "section-bus",
@@ -7503,9 +7503,9 @@
       "topic": "people",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ",
       "room": "H303",
-      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ · ауд. H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7541,7 +7541,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T04:31:30.000Z"
+      "updatedAt": "2026-11-12T10:02:50.000Z"
     },
     {
       "id": "open-lecture-nitin-singh",
@@ -7558,9 +7558,9 @@
       "topic": "people",
       "format": "Специальное мероприятие",
       "attendance": "Очно",
-      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ",
+      "venue": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ",
       "room": "H303",
-      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ · ауд. H303",
+      "place": "Кампус УрФУ в Новокольцовском · корпус ИРИТ-РТФ · ауд. H303",
       "code": "",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -7596,7 +7596,7 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-10T04:31:30.000Z"
+      "updatedAt": "2026-11-12T10:02:50.000Z"
     },
     {
       "id": "coffee-14-1130",

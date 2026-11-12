@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T05:18:12.517100+00:00",
+  "generatedAt": "2026-11-12T07:22:05.366823+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -3368,7 +3368,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/ql07v2oas0b3",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T06:17:18.000Z",
+      "updatedAt": "2026-11-12T07:01:36.000Z",
       "sectionTalks": [
         {
           "names": [
@@ -3455,6 +3455,12 @@
             "Шерстобитова Дарья Евгеньевна (ИнЭУ УрФУ, Екатеринбург, Россия)"
           ],
           "title": "Внедрение гибридного управления консалтинговыми проектами в условиях неопределённости"
+        },
+        {
+          "names": [
+            "Чжу Цзяньцун (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Russian consumers' attitudes toward Chinese-brand consumer electronics and characteristics of their egocentric networks"
         }
       ]
     },
