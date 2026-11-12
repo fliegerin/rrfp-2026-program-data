@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T05:08:25.482622+00:00",
+  "generatedAt": "2026-11-12T05:18:12.517100+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -3279,8 +3279,33 @@
       "onlineUrl": "",
       "canJoin": false,
       "feature": false,
-      "updatedAt": "2026-11-12T05:07:16.000Z",
-      "sectionTalks": []
+      "updatedAt": "2026-11-12T05:17:40.000Z",
+      "sectionTalks": [
+        {
+          "names": [
+            "Zhou Jing (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "A dynamic evaluation of the development potential of China's integrated medical and elderly care service system based on entropy-weighted TOPSIS and the obstacle degree model"
+        },
+        {
+          "names": [
+            "Ван Сяоцянь (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Human capital development strategy in an era of low fertility: transforming education to adapt to the future labour market"
+        },
+        {
+          "names": [
+            "Фан Чэнмин (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Эволюция рынка труда от платформенной архитектуры к управляемой адаптивности в условиях технологических сдвигов"
+        },
+        {
+          "names": [
+            "Shah Brahim (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Regulator signals and university exits from the monitoring of university performance"
+        }
+      ]
     },
     {
       "id": "section-mar",
