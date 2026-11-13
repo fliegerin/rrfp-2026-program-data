@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T08:03:24.149331+00:00",
+  "generatedAt": "2026-11-13T08:33:24.229443+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -4551,10 +4551,10 @@
       "invitationOnly": false,
       "separateRegistration": false,
       "registrationUrl": "",
-      "onlineUrl": "",
-      "canJoin": false,
+      "onlineUrl": "https://urfucom.ktalk.ru/w4x7o3a4m4wi",
+      "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T06:17:18.000Z",
+      "updatedAt": "2026-11-13T08:32:28.000Z",
       "sectionTalks": [
         {
           "names": [
