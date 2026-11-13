@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T05:44:22.192228+00:00",
+  "generatedAt": "2026-11-13T06:56:43.015452+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -3021,8 +3021,8 @@
       "format": "Секция",
       "attendance": "Очно и онлайн",
       "venue": "Кампус УрФУ в Новокольцовском · ИнЭУ",
-      "room": "М212",
-      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. М212",
+      "room": "N212",
+      "place": "Кампус УрФУ в Новокольцовском · ИнЭУ · ауд. N212",
       "code": "DBT",
       "partners": [],
       "participationSchemaVersion": 2,
@@ -3058,7 +3058,7 @@
       "onlineUrl": "https://urfucom.ktalk.ru/nxer22ginaxh",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-13T04:46:14.000Z",
+      "updatedAt": "2026-11-13T06:55:48.000Z",
       "sectionTalks": [
         {
           "names": [
