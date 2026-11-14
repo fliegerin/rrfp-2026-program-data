@@ -10,9 +10,6 @@ on:
         description: Read fresh published data from Airtable
         type: boolean
         default: true
-  schedule:
-    # 22:17 UTC = 03:17 in Yekaterinburg the following day.
-    - cron: '17 22 * * *'
 
 permissions:
   contents: read
