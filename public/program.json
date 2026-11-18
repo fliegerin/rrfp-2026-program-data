@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T04:08:39.315033+00:00",
+  "generatedAt": "2026-11-18T08:35:53.658667+00:00",
   "timezone": "Asia/Yekaterinburg",
   "mode": "published",
   "recordCount": 78,
@@ -6559,37 +6559,13 @@
       "onlineUrl": "https://urfucom.ktalk.ru/lhnk2fdqaak0",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T07:39:42.000Z",
+      "updatedAt": "2026-11-18T08:28:46.000Z",
       "sectionTalks": [
         {
           "names": [
-            "Onewo Theophilus Tobi Eshiozemoghie (ИнЭУ УрФУ, Екатеринбург, Россия)"
+            "Воронов Игорь Сергеевич (МГУ, Москва, Россия)"
           ],
-          "title": "From corporate ESG to territorial ESG collaboration: a territorial ESG collaboration model for sustainable smart cities"
-        },
-        {
-          "names": [
-            "Maria Jose Garcia Coloma (ИнЭУ УрФУ, Екатеринбург, Россия)"
-          ],
-          "title": "Navigating global ESG mandates: strategic market adaptation in emerging economy supply chains (the case of the seafood industry)"
-        },
-        {
-          "names": [
-            "Трофимов Никита Денисович (ИнЭУ УрФУ, Екатеринбург, Россия)"
-          ],
-          "title": "Анализ потенциала международного рынка возобновляемых источников энергии"
-        },
-        {
-          "names": [
-            "Кариш Еляс Нур Ел Якине (УГИ УрФУ, Екатеринбург, Россия)"
-          ],
-          "title": "Analysis of global supply chain restructuring in world economies' countries"
-        },
-        {
-          "names": [
-            "Saira (ИнЭУ УрФУ, Екатеринбург, Россия)"
-          ],
-          "title": "Bridging ESG-driven university transformation and student sustainability: the mediating and moderating role of AI adoption in cultural integration, academic adjustment, and innovation"
+          "title": "Организационно-экономические механизмы государственного управления в условиях цифровой трансформации: содержание понятия и типология"
         },
         {
           "names": [
@@ -6599,10 +6575,28 @@
         },
         {
           "names": [
+            "Прохоров Никита Андреевич (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Перспективы и механизмы формирования зерновой биржи в формате БРИКС+"
+        },
+        {
+          "names": [
             "Дядюра Антон Эдуардович (ИнЭУ УрФУ, Екатеринбург, Россия)",
             "Юдинцева Александра Владимировна (ИнЭУ УрФУ, Екатеринбург, Россия)"
           ],
           "title": "Оценка потенциала развития бьюти-индустрии стран БРИКС+"
+        },
+        {
+          "names": [
+            "Трофимов Никита Денисович (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Анализ потенциала международного рынка возобновляемых источников энергии"
+        },
+        {
+          "names": [
+            "Килина Дарья Игоревна (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Искусственный интеллект в мировой экономике: почему одни страны получают больше преимуществ, чем другие"
         },
         {
           "names": [
@@ -6617,6 +6611,30 @@
             "Потапова Владислава Алексеевна (ИнЭУ УрФУ, Екатеринбург, Россия)"
           ],
           "title": "Географическая концентрация внешней торговли России в 2001–2025 годы"
+        },
+        {
+          "names": [
+            "Кариш Еляс Нур Ел Якине (УГИ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Analysis of global supply chain restructuring in world economies' countries"
+        },
+        {
+          "names": [
+            "Peterkin Senanu Kofi Danyo (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Exploring community engagement in ecotourism development in Ghana: power dynamics, benefit sharing, and sustainability"
+        },
+        {
+          "names": [
+            "Onewo Theophilus Tobi Eshiozemoghie (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "From corporate ESG to territorial ESG collaboration: a territorial ESG collaboration model for sustainable smart cities"
+        },
+        {
+          "names": [
+            "Maria Jose Garcia Coloma (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Navigating global ESG mandates: strategic market adaptation in emerging economy supply chains (the case of the seafood industry)"
         }
       ]
     },
@@ -8127,14 +8145,57 @@
       "onlineUrl": "https://urfucom.ktalk.ru/lhnk2fdqaak0",
       "canJoin": true,
       "feature": false,
-      "updatedAt": "2026-11-11T07:40:05.000Z",
+      "updatedAt": "2026-11-18T08:28:46.000Z",
       "sectionTalks": [
         {
           "names": [
-            "Herlina Saragih (ИнЭУ УрФУ, Екатеринбург, Россия)",
-            "Калабина Елена Георгиевна (ИнЭУ УрФУ, Екатеринбург, Россия)"
+            "Алнафра Ибрагим (ИнЭУ УрФУ, Екатеринбург, Россия)",
+            "Аббас Шуджаат (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Decoupling Despite Alignment: Geopolitical Risk and the Limits of Financial Integration between China and Russia"
+        },
+        {
+          "names": [
+            "Noor Ahmed Brohi (The Begum Nusrat Bhutto (BNB) Women University Sukkur, Пакистан)"
+          ],
+          "title": "Beyond the Pilot: Why AI’s Economic Value Depends on People"
+        },
+        {
+          "names": [
+            "Gul Afshan (Sukkur IBA University, Пакистан)"
+          ],
+          "title": "The Future of Work in a Changing Global Economy: HRM as a Catalyst for Regional Transformation"
+        },
+        {
+          "names": [
+            "Saira (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Bridging ESG-driven university transformation and student sustainability: the mediating and moderating role of AI adoption in cultural integration, academic adjustment, and innovation"
+        },
+        {
+          "names": [
+            "Soltani Ahlem Fadila (Oum El Bouaghi University, Алжир)",
+            "Ayache Zoubeir (Oum El Bouaghi University, Алжир)"
+          ],
+          "title": "Environmental Kuznets curve in China: economic growth, fossil fuel dependence, and CO2 emissions evidence from the ARDL bound testing approach"
+        },
+        {
+          "names": [
+            "Herlina Saragih (ИнЭУ УрФУ, Екатеринбург, Россия)"
           ],
           "title": "Environmental management and perceived tourism sustainability in Bali: triangulating Russian-speaking visitor and local stakeholder evidence"
+        },
+        {
+          "names": [
+            "Daxta Pandey (ИнЭУ УрФУ, Екатеринбург, Россия)"
+          ],
+          "title": "Beyond Digital Access: Institutional Readiness and the Challenges of Digital Transformation in BRICS Higher Education"
+        },
+        {
+          "names": [
+            "Воротов Максим Дмитриевич (ПГНИУ, Пермь, Россия)"
+          ],
+          "title": "Институциональные механизмы и рыночные практики стимулирования цифровой трансформации бизнес-процессов в металлургической отрасли как фактор устойчивого развития"
         },
         {
           "names": [
@@ -8144,7 +8205,7 @@
         },
         {
           "names": [
-            "Портнягина Екатерина Эрнестовна (МГУ имени М.В. Ломоносова, Москва, Россия)"
+            "Портнягина Екатерина Эрнестовна (МГУ, Москва, Россия)"
           ],
           "title": "Социальная лицензия компаний-природопользователей в городах Арктической зоны: что показывает отчётность и как проверить её опросом жителей"
         }
